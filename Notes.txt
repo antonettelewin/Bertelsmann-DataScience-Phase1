@@ -1,0 +1,5 @@
+Lesson 7 - Visualizing Data
+  http://www.shodor.org/interactivate/activities/Histogram/
+  
+Lesson 10 - Central Tendency [Mod-30]
+  Here is a short doc outlining Mean, Median, and Mode. http://tinyurl.com/measureOfCenter
