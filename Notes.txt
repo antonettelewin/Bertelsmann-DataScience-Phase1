@@ -23,3 +23,11 @@ Lesson 13
   sum of squares = sum of each deviate squared (squared deviation)
   variance : average of sum of squares
   standard deivation = squareroot(variance)
+
+
+lesson 15
+https://docs.google.com/spreadsheet/viewform?formkey=dDVIamhxZV9hUHBfMnJ5WmZkM2ZrWFE6MQ
+  z score : standard deviation from mean 
+    [x(orginal value) - mean ]/deviation
+ with z score you can create strandard normal disrtuction where the mewn is 0, the standard deviation is 1
+ when calucating normal distrubriton you used the z score to find x
