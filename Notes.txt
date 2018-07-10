@@ -31,3 +31,8 @@ https://docs.google.com/spreadsheet/viewform?formkey=dDVIamhxZV9hUHBfMnJ5WmZkM2Z
     [x(orginal value) - mean ]/deviation
  with z score you can create strandard normal disrtuction where the mewn is 0, the standard deviation is 1
  when calucating normal distrubriton you used the z score to find x
+
+Lesson 20
+http://www.wolframalpha.com/
+Mean of each sample: 
+1, 1.5, 2, 2.5, 1.5, 2, 2.5, 3, 2, 2.5, 3, 3.5, 2.5, 3, 3.5, 4
