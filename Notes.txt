@@ -34,7 +34,7 @@ https://docs.google.com/spreadsheet/viewform?formkey=dDVIamhxZV9hUHBfMnJ5WmZkM2Z
 
 Lesson 20
 http://www.wolframalpha.com/
-Mean of each sample: 
-1, 1.5, 2, 2.5, 1.5, 2, 2.5, 3, 2, 2.5, 3, 3.5, 2.5, 3, 3.5, 4
+Mean of each sample: 1, 1.5, 2, 2.5, 1.5, 2, 2.5, 3, 2, 2.5, 3, 3.5, 2.5, 3, 3.5, 4
 standard deviation of population / standard dev of sample means = square root of sample size
-standard devisation of sample means(sampling distribution) = population stardard dev / square root of sample size
+standard devisation of sample means(standard error)(sampling distribution) = population stardard dev / square root of sample size
+http://onlinestatbook.com/stat_sim/sampling_dist/index.html
