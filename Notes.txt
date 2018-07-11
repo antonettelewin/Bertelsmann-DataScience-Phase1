@@ -38,3 +38,7 @@ Mean of each sample: 1, 1.5, 2, 2.5, 1.5, 2, 2.5, 3, 2, 2.5, 3, 3.5, 2.5, 3, 3.5
 standard deviation of population / standard dev of sample means = square root of sample size
 standard devisation of sample means(standard error)(sampling distribution) = population stardard dev / square root of sample size
 http://onlinestatbook.com/stat_sim/sampling_dist/index.html
+
+Lesson 21
+We'll describe the location of the sample mean by calculating how many standard errors it is away from the center of the sampling distribution. That will give us a z-score for our sample mean.
+
