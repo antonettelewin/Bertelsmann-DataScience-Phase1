@@ -1,0 +1,15 @@
+Lesson 24
+Arithmetic Operations
+  +   addition
+  -   subtraction
+  *   multiplcation
+  /   division
+  **  exponential
+  %   modulo (returns remainer)
+  //  interger diviaon (sums down answer to whole number 3.5=3)
+  
+There are two Python data types that could be used for numeric values:
+  int - for integer values
+  float - for decimal or floating point values
+  x = int(4.7)   # x is now an integer 4
+  y = float(4)   # y is now a float of 4.0
