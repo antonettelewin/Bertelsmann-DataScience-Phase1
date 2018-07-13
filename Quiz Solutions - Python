@@ -1,0 +1,53 @@
+Lesson 24    
+Strings
+  Strings in Python are shown as the variable type str. You can define a string with either double quotes " or single quotes '. 
+    There are two ways to do this: 
+      with backslash escaping: `ford_quote = 'Whether you think you can, or you think you can\'t--you\'re right.'`
+      with double quotes: `ford_quote = "Whether you think you can, or you think you can't--you're right."`
+  
+The len() function
+  len() is a built-in Python function that returns the length of an object, like a string. 
+    name_length = len(given_name + middle_names + family_name) + 2`. The `+2` accounts for the spaces in between each word.
+    
+ Type And Type Conversion
+You have seen four data types so far:
+
+int
+float
+bool
+string
+
+ Quiz: Which is denser, Rio or San Francisco?
+print(san_francisco_pop_density > rio_de_janeiro_pop_density)
+Note other solutions are possible, like the one below, but take a moment to make sure you understand and appreciate the concise efficiency of the one line above!
+
+if (san_francisco_pop_density > rio_de_janeiro_pop_density):
+    print (True)
+else:
+    print (False)
+    
+ Quiz: Fix the Quote
+Here are two different methods to fix the quote:
+
+# TODO: Fix this string!
+ford_quote = 'Whether you think you can, or you think you can\'t--you\'re right.'
+
+# TODO: Fix this string!
+ford_quote = "Whether you think you can, or you think you can't--you're right."
+Quiz: Write a Server Log Message
+Here are a couple of options for this one:
+
+
+print (username + " accessed the site " + url + " at " + timestamp + ".")
+
+OR
+
+message = username + " accessed the site " + url + " at " + timestamp + "."
+print(message)
+Quiz: len
+name_length = len(given_name) + len(middle_names) + len(family_name) + 2
+
+Quiz: Total Sales
+weekly_sales = int(mon_sales) + int(tues_sales) + int(wed_sales) + int(thurs_sales) + int(fri_sales)
+weekly_sales = str(weekly_sales)  #convert the type back!!
+print("This week's total sales: " + weekly_sales)
