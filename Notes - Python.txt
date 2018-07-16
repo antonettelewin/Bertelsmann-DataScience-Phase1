@@ -68,3 +68,45 @@ Identity Operators
     print(n is None)
     print(n is not None)
   
+Compound Data Structures
+  We can include containers in other containers to create compound data structures.
+    elements = {"hydrogen": {"number": 1,
+                             "weight": 1.00794,
+                             "symbol": "H"},
+                  "helium": {"number": 2,
+                             "weight": 4.002602,
+                             "symbol": "He"}}
+  We can access elements in this nested dictionary like this.
+    helium = elements["helium"]  # get the helium dictionary
+    hydrogen_weight = elements["hydrogen"]["weight"]  # get hydrogen's weight
+  You can also add a new key to the element dictionary.
+    oxygen = {"number":8,"weight":15.999,"symbol":"O"}  # create a new oxygen dictionary 
+    elements["oxygen"] = oxygen  # assign 'oxygen' as a key to the elements dictionary
+    print('elements = ', elements)
+    
+List are sortable, you can add an item to a list with .append and list items are always indexed with numbers starting at 0.
+Sets are not ordered, so the order in which items appear can be inconsistent and you add items to sets with .add. Like dictionaries and lists, sets are mutable.You cannot have the same item twice and you cannot sort sets. For these two properties a list would be more appropriate.
+Each item in a dictionary contains two parts (a key and a value), the items in a dictionary are not ordered, and we have seen in this lesson examples of nested dictionaries. Because dictionaries are not ordered, they are not sortable. And you do not add items to a dictionary with .append.
+
+
+LESSON 25
+If Statement
+  An if statement is a conditional statement that runs or skips code based on whether a condition is true or false.
+    if phone_balance < 5:
+    phone_balance += 10
+    bank_balance -= 10
+    
+If, Elif, Else
+    if season == 'spring':
+        print('plant the garden!')
+    elif season == 'summer':
+        print('water the garden!')
+    elif season == 'fall':
+        print('harvest the garden!')
+    elif season == 'winter':
+        print('stay indoors!')
+    else:
+        print('unrecognized season')
+  if: An if statement must always start with an if clause, which contains the first condition that is checked. 
+  elif: elif is short for "else if." An elif clause is used to check for an additional condition if the conditions in the previous clauses in the if statement evaluate to False. 
+  else: Last is the else clause, which must come at the end of an if statement if used. This clause doesn't require a condition.
