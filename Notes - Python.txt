@@ -278,7 +278,7 @@ Conditionals in List Comprehensions
 	If you would like to add else, you have to move the conditionals to the beginning of the listcomp, right after the expression, like this.
 		squares = [x**2 if x % 2 == 0 else x + 3 for x in range(9)]	
 
-LESSON 26
+LESSON 26 : FUBCTIONS
 
 Defining Functions
 	Example of a function definition:
@@ -356,3 +356,33 @@ Documentation
 		population_density: population / land_area. The population density of a particular area.
 		"""
 		return population / land_area
+
+Lambda Expressions
+	You can use lambda expressions to create anonymous functions. That is, functions that don’t have a name. They are helpful for creating quick functions that aren’t needed later in your code. This can be especially useful for higher order functions, or functions that take in other functions as arguments.
+	With a lambda expression, this function:
+		def multiply(x, y):
+			return x * y
+	can be reduced to:
+		multiply = lambda x, y: x * y
+		
+Iterators And Generators
+	Iterables are objects that can return one of their elements at a time, such as a list. Many of the built-in functions we’ve used so far, like 'enumerate,' return an iterator.
+
+	An iterator is an object that represents a stream of data. This is different from a list, which is also an iterable, but not an iterator because it is not a stream of data.
+
+	Generators are a simple way to create iterators using functions. You can also define iterators using classes, which you can read more about here.
+
+	Here is an example of a generator function called my_range, which produces an iterator that is a stream of numbers from 0 to (x - 1).
+		def my_range(x):
+			i = 0
+			while i < x:
+				yield i
+				i += 1
+	Notice that instead of using the return keyword, it uses yield. This allows the function to return values one at a time, and start where it left off each time it’s called. This yield keyword is what differentiates a generator from a typical function.
+
+Generator Expressions
+	Here's a cool concept that combines generators and list comprehensions! You can actually create a generator in the same way you'd normally write a list comprehension, except with parentheses instead of square brackets. For example:
+
+	sq_list = [x**2 for x in range(10)]  # this produces a list of squares
+
+	sq_iterator = (x**2 for x in range(10))  # this produces an iterator of squares
