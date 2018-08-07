@@ -1,0 +1,34 @@
+LESSON 28
+
+Entity Relationship Diagrams
+	An entity relationship diagram (ERD) is a common way to view data in a database. 
+	https://classroom.udacity.com/courses/ud002-bert/lessons/614cf95a-13bf-406c-b092-e757178e633b/concepts/63924491-9491-4fb8-b39b-611a613c25fd#
+	
+	The "crow's foot" that connects the tables together shows us how the columns in one table relate to the columns in another table.
+
+The three lessons in this course aim at the following components of SQL:
+
+	SQL Basics - Here you will get your first taste at how SQL works, and learn the basics of the SQL language. You will learn how to write code to interact with tables similar to the ones we analyzed in Excel earlier. Specifically, you will learn a little about databases, the basic syntax of SQL, and you will write your first queries!
+
+	SQL Joins - In this lesson, you will learn the real power of SQL. You will learn about Entity Relationship Diagrams (ERDs), and how to join multiple tables together from a relational database. The power to join tables is what really moved companies to adopt this approach to holding data.
+
+	SQL Aggregations - In this final lesson, you will learn some more advanced features of SQL. You will gain the ability to summarize data from multiple tables in a database. 
+		
+SQL vs. NoSQL
+	You may have heard of NoSQL, which stands for not only SQL. Databases using NoSQL allow for you to write code that interacts with the data a bit differently than what we will do in this course. These NoSQL environments tend to be particularly popular for web based data, but less popular for data that lives in spreadsheets the way we have been analyzing data up to this point. One of the most popular NoSQL languages is called MongoDB. 
+	
+Here you were introduced to two statements that will be used in every query you write
+	SELECT is where you tell the query what columns you want back.
+	FROM is where you tell the query what table you are querying from. Notice the columns need to exist in this table.	
+	The ORDER BY statement allows us to order our table by any row. If you are familiar with Excel, this is similar to the sorting you can do with filters.
+	The ORDER BY statement is always after the SELECT and FROM statements, but it is before the LIMIT statement. As you learn additional commands, the order of these statements will matter more. If we are using the LIMIT statement, it will always appear last.
+	Using the WHERE statement, we can subset out tables based on conditions that must be met. 
+	Creating a new column that is a combination of existing columns is known as a derived column.
+	LIKE - This allows you to perform operations similar to using WHERE and =, but for cases when you might not know exactly what you are looking for.
+	IN - This allows you to perform operations similar to using WHERE and =, but for more than one condition.
+	NOT - This is used with IN and LIKE to select all of the rows NOT LIKE or NOT IN a certain condition.
+	AND & BETWEEN - These allow you to combine operations where all combined conditions must be true.
+	OR - This allow you to combine operations where at least one of the combined conditions must be true.
+	By specifying NOT LIKE or NOT IN, we can grab all of the rows that do not meet a particular criteria.
+	Similar to the AND operator, the OR operator can combine multiple statements. Each time you link a new statement with an OR, you will need to specify the column you are interested in looking at
+	
