@@ -32,3 +32,16 @@ Here you were introduced to two statements that will be used in every query you 
 	By specifying NOT LIKE or NOT IN, we can grab all of the rows that do not meet a particular criteria.
 	Similar to the AND operator, the OR operator can combine multiple statements. Each time you link a new statement with an OR, you will need to specify the column you are interested in looking at
 	
+
+LESSON 29
+	The JOIN introduces the second table from which you would like to pull data, and the ON tells you how you would like to merge the tables in the FROM and JOIN statements together.
+	The ON statement holds the two columns that get linked across the two tables. This will be the focus in the next concepts.
+	A primary key is a unique column in a particular table.are unique for every row in a table. 
+	A foreign key are the primary key appearing in another table, which allows the rows to be non-unique.
+	INNER JOINs - pulled rows only if they exist as a match across two tables.
+	LEFT JOIN - a way to pull all of the rows from the table in the FROM even if they do not exist in the JOIN statement.
+	RIGHT JOIN - a way to pull all of the rows from the table in the JOIN even if they do not exist in the FROM statement.
+	FULL OUTER JOIN - This will return the inner join result set, as well as any unmatched rows from either of the two tables being joined.
+	foreign keys - 
+	Unlike COUNT, you can only use SUM on numeric columns. However, SUM will ignore NULL values, as do the other aggregation functions you will see in the upcoming lessons.
+	
