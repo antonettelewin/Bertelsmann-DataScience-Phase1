@@ -57,3 +57,7 @@ LESSON 30 SQL AGGREGATIONS
 	CASE - Expert Tip
 		The CASE statement always goes in the SELECT clause.
 		CASE must include the following components: WHEN, THEN, and END. ELSE is an optional component to catch cases that didn’t meet any of the other previous CASE conditions.
+
+LESSON 31: SQL Subqueries & Temporary Tables
+
+Note that you should not include an alias when you write a subquery in a conditional statement. This is because the subquery is treated as an individual value (or set of values in the IN case) rather than as a table.
