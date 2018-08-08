@@ -45,3 +45,15 @@ LESSON 29
 	foreign keys - 
 	Unlike COUNT, you can only use SUM on numeric columns. However, SUM will ignore NULL values, as do the other aggregation functions you will see in the upcoming lessons.
 	
+LESSON 30 SQL AGGREGATIONS
+
+	GROUP BY can be used to aggregate data within subsets of the data. For example, grouping for different accounts, different regions, or different sales representatives.
+	Any column in the SELECT statement that is not within an aggregator must be in the GROUP BY clause.
+	The GROUP BY always goes between WHERE and ORDER BY.
+	ORDER BY works like SORT in spreadsheet 
+	DISTINCT is always used in SELECT statements, and it provides the unique rows for all columns written in the SELECT statement. Therefore, you only use DISTINCT once in any particular SELECT statement.
+	DATE_TRUNC allows you to truncate your date to a particular part of your date-time column. Common trunctions are day, month, and year. Here is a great blog post by Mode Analytics on the power of this function.
+	DATE_PART can be useful for pulling a specific portion of a date, but notice pulling month or day of the week (dow) means that you are no longer keeping the years in order. Rather you are grouping for certain components regardless of which year they belonged in.
+	CASE - Expert Tip
+		The CASE statement always goes in the SELECT clause.
+		CASE must include the following components: WHEN, THEN, and END. ELSE is an optional component to catch cases that didn’t meet any of the other previous CASE conditions.
