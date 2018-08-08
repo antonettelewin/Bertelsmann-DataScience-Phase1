@@ -1,4 +1,4 @@
-LESSON 28
+LESSON 28 : Basic SQL
 
 Entity Relationship Diagrams
 	An entity relationship diagram (ERD) is a common way to view data in a database. 
@@ -33,7 +33,7 @@ Here you were introduced to two statements that will be used in every query you 
 	Similar to the AND operator, the OR operator can combine multiple statements. Each time you link a new statement with an OR, you will need to specify the column you are interested in looking at
 	
 
-LESSON 29
+LESSON 29  : SQL Joins
 	The JOIN introduces the second table from which you would like to pull data, and the ON tells you how you would like to merge the tables in the FROM and JOIN statements together.
 	The ON statement holds the two columns that get linked across the two tables. This will be the focus in the next concepts.
 	A primary key is a unique column in a particular table.are unique for every row in a table. 
@@ -61,3 +61,17 @@ LESSON 30 SQL AGGREGATIONS
 LESSON 31: SQL Subqueries & Temporary Tables
 
 Note that you should not include an alias when you write a subquery in a conditional statement. This is because the subquery is treated as an individual value (or set of values in the IN case) rather than as a table.
+
+LESSON 31: SQL Data Cleaning
+
+	LEFT pulls a specified number of characters for each row in a specified column starting at the beginning (or from the left). As you saw here, you can pull the first three digits of a phone number using LEFT(phone_number, 3).
+	RIGHT pulls a specified number of characters for each row in a specified column starting at the end (or from the right). As you saw here, you can pull the last eight digits of a phone number using RIGHT(phone_number, 8).
+	LENGTH provides the number of characters for each row of a specified column. Here, you saw that we could use this to get the length of each phone number as LENGTH(phone_number).
+	TO_DATE
+	CAST
+	Casting with ::
+	DATE_PART('month', TO_DATE(month, 'month')) here changed a month name into the number associated with that particular month.
+	Then you can change a string to a date using CAST. CAST is actually useful to change lots of column types. Commonly you might be doing as you saw here, where you change a string to a date using CAST(date_column AS DATE). However, you might want to make other changes to your columns in terms of their data types. You can see other examples here.
+	In this example, you also saw that instead of CAST(date_column AS DATE), you can use date_column::DATE.
+	LEFT, RIGHT, and TRIM are all used to select only certain elements of strings, but using them to select elements of a number or date will treat them as strings for the purpose of the function. 
+	COALESCE returns the first non-NULL value passed for each row
